@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlfoBiz - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">AlfoBiz</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="categories-nav">
+            <div class="container">
+                <ul class="categories-list">
+                    <li><a href="#" class="active" data-category="all">All Products</a></li>
+                    <li><a href="#" data-category="Audio">Audio</a></li>
+                    <li><a href="#" data-category="Wearables">Wearables</a></li>
+                    <li><a href="#" data-category="Televisions">TVs</a></li>
+                    <li><a href="#" data-category="Computers">Computers</a></li>
+                    <li><a href="#" data-category="Cameras">Cameras</a></li>
+                    <li><a href="#" data-category="Smart Home">Smart Home</a></li>
+                    <li><a href="#" data-category="Accessories">Accessories</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product-grid" id="all-products">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>AlfoBiz</h3>
+                <p>Your one-stop shop for all your electronics needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@alfobiz.com</p>
+                <p>Phone: +254770223666</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 AlfoBiz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
