@@ -25,43 +25,39 @@
 
     <main class="container">
         <section class="cart-header">
-            <h1>Your Shopping Cart</h1>
-            <p id="cart-status">You have <span id="item-count">0</span> items in your cart</p>
-        </section>
 
-        <section class="cart-content">
-            <div class="cart-items" id="cart-items">
-                <!-- Cart items will be loaded via JavaScript -->
-                <div class="empty-cart">
-                    <p>Your cart is currently empty.</p>
-                    <a href="products.html" class="btn">Continue Shopping</a>
-                </div>
-            </div>
+        <div class="cart-container">
+    <h1>Your Shopping Cart</h1>
+    <div id="cart-items" class="cart-items">
+        <!-- Cart items will be inserted here -->
+    </div>
+    
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-row">
+            <span>Subtotal:</span>
+            <span id="subtotal">$0.00</span>
+        </div>
+        <div class="summary-row">
+            <span>Shipping:</span>
+            <span id="shipping">$0.00</span>
+        </div>
+        <div class="summary-row">
+            <span>Tax:</span>
+            <span id="tax">$0.00</span>
+        </div>
+        <div class="summary-row total">
+            <span>Total:</span>
+            <span id="total">$0.00</span>
+        </div>
+        
+        <button id="clear-cart-btn" class="btn danger">Clear Cart</button>
+        <button id="
+        checkout-btn" class="btn primary">Proceed to Checkout</button>
+    </div>
+</div>
 
-            <div class="cart-summary">
-                <h2>Order Summary</h2>
-                <div class="summary-details">
-                    <div class="summary-row">
-                        <span>Subtotal</span>
-                        <span id="subtotal">$4.00</span>
-                    </div>
-                    <div class="summary-row">
-                        <span>Shipping</span>
-                        <span id="shipping">$1.00</span>
-                    </div>
-                    <div class="summary-row">
-                        <span>Tax</span>
-                        <span id="tax">$2.00</span>
-                    </div>
-                    <div class="summary-row total">
-                        <span>Total</span>
-                        <span id="total">$7.00</span>
-                    </div>
-                </div>
-                <button id="checkout-btn" class="btn" disabled>Proceed to Checkout</button>
-                <a href="products.html" class="continue-shopping">Continue Shopping</a>
-            </div>
-        </section>
+        
     </main>
 
     <footer class="main-footer">
@@ -81,7 +77,7 @@
             <div class="footer-section">
                 <h3>Contact Us</h3>
                 <p>Email: info@alfobiz.com</p>
-                <p>Phone: +254770223666</p>
+                <p>Phone: (+254) 770 223 666</p>
             </div>
         </div>
         <div class="copyright">
